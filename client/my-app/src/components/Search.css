@@ -1,0 +1,88 @@
+.searchbar {
+    margin-top: 3rem;
+    width: 40%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.searchbar__input {
+    width: 100%;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 100px;
+    transition: .2s all ease-in;
+    background-color: rgba(255,255,255,.3);
+    color: #c7c7c7;
+}
+
+.searchbar__input::placeholder {
+    color: #c7c7c7;
+}
+
+.searchbar__icon {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transition: .2s all ease-in;
+    transform: translateY(-50%);
+}
+
+.searchbar__input:focus {
+    outline: none;
+    transform: scaleX(1.05);
+    background-color: rgba(255,255,255,.2);
+    color: white;
+}
+
+.searchbar__input:focus + .searchbar__icon {
+    right: .2rem;
+}
+
+.searchbar-results {
+    position: absolute;
+    max-height: 400px;
+    overflow-y: scroll;
+    width: 100%;
+    background-color: #252525;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.searchbar-results__title {
+    padding: 1rem;
+    background-color: #4d4d4d;
+}
+
+.searchbar-results__result {
+    list-style-type: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;    
+    transition: .1s all linear;
+}
+
+.searchbar-results__result:hover {
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+}
+
+.searchbar-results::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.searchbar-results::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+.searchbar-results::-webkit-scrollbar-thumb
+{
+	border: 2px solid #555555;
+	background-color: #555;
+}
