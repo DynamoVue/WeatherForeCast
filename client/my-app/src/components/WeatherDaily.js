@@ -1,5 +1,5 @@
 import { WiHumidity, WiThermometer, WiStrongWind, WiWindDeg, WiRaindrop, WiDaySunnyOvercast } from 'react-icons/wi'
-import moment from 'momment';
+import moment from 'moment';
 import './Weather.css'
 
 const windDirections = ["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW","N"];
